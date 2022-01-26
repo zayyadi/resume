@@ -75,6 +75,7 @@ End Content
         <div class="row">
         {% for obj in object_list %}
               <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <a class="text-dark" href="{{obj.get_absolute_url}}">
                 <img class="card-img-top" src="{{obj.image.url}}" alt="{{ obj.name}}">
                 <div class="card-body">
                   <h2 style="font-size:18px;font-weight:bold">{{obj.name|truncatechars:50}}</h2>
